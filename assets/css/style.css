@@ -1,0 +1,15 @@
+body{
+    background:#f4f6f9;
+}
+
+.sidebar{
+    min-height:100vh;
+}
+
+.card{
+    border-radius:15px;
+}
+
+.btn{
+    border-radius:10px;
+}
