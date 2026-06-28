@@ -157,9 +157,7 @@ class AuthController
         return isset($_SESSION['id']);
     }
 
-    // ==========================
-    // ROLE
-    // ==========================
+    
     public static function role()
     {
         return $_SESSION['role'] ?? null;
