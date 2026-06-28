@@ -139,9 +139,7 @@ class AuthController
         require_once __DIR__ . '/../Views/auth/login.php';
     }
 
-    // ==========================
-    // DECONNEXION
-    // ==========================
+
     public function logout()
     {
         session_unset();
