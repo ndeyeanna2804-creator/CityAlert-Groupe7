@@ -70,9 +70,6 @@ class AuthController
         require_once __DIR__ . '/../Views/auth/register.php';
     }
 
-    // ==========================
-    // CONNEXION
-    // ==========================
     public function login()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -142,9 +139,7 @@ class AuthController
         require_once __DIR__ . '/../Views/auth/login.php';
     }
 
-    // ==========================
-    // DECONNEXION
-    // ==========================
+
     public function logout()
     {
         session_unset();
@@ -156,17 +151,13 @@ class AuthController
         exit();
     }
 
-    // ==========================
-    // UTILISATEUR CONNECTÉ
-    // ==========================
+    
     public static function isLogged()
     {
         return isset($_SESSION['id']);
     }
 
-    // ==========================
-    // ROLE
-    // ==========================
+    
     public static function role()
     {
         return $_SESSION['role'] ?? null;
