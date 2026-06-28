@@ -151,9 +151,7 @@ class AuthController
         exit();
     }
 
-    // ==========================
-    // UTILISATEUR CONNECTÉ
-    // ==========================
+    
     public static function isLogged()
     {
         return isset($_SESSION['id']);
